@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested flex box practice</title>
+        <style>
+            .flex-box{
+                display: flex;
+                flex-direction: row;
+                margin-left: 15px;
+            }
+            .second-flex-box{
+                display: flex;
+                flex-direction: column;
+            }
+            .cat-picture{
+                height: 80px;
+                width: 80px;
+                border-radius: 40px;
+                margin-right: 15px;
+            }
+            .text{
+                width: 310px;
+               
+            }
+            .title{
+                font-weight: bold;
+                font-family: Arial;
+            }
+            .info{
+                line-height: 20px;
+                margin-top: -10px;
+            }
+            .name{
+                color: rgb(92, 90, 90);
+                font-weight: lighter;
+                
+            }
+            .custom-button{
+                display: inline-flex;
+                border-radius: 15px;
+                border: solid;
+                border-width: 1px;
+                border-color: rgb(168, 162, 162);
+                height: 80px;
+                align-items: center;
+                width: 310px;
+                margin-top: 0;
+               
+            }
+            .empty-part{
+                width: 33.33%;
+               
+                height: 100%;
+               
+                
+
+            }
+            .button-text{
+                width: 66.66%;
+                text-align: start;
+                padding-left: 15px;
+                background-color: white;
+                border-radius: 0 15px 15px 0;
+                margin-right: -6px;
+                height: 78px;
+       
+            }
+            .url{
+                color: gray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class ="flex-box">
+            <img class= "cat-picture" src ="cat-pic/cat-1.jpg">
+            <div class ="second-flex-box">
+                <div class ="text">
+                    <p class ="title">supersimple.dev <span class="name">@SuperSimpleDev</span></p>
+                    <p class ="info" >What is backend web development? A complete overview. New video is up!</p>
+
+                </div>
+                
+                <button class ="custom-button">
+                    <div class ="empty-part"></div>
+                    <div class ="button-text">
+                        <p class ='url'>youtube.com</p>
+                        <p>Backend web development &ndash; a complete overview (2021) </p>
+                    </div>
+                </button>
+                
+
+            </div>
+            
+            
+        </div>
+       
+    </body>
+</html>

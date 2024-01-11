@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position practice</title>
+        <style>
+            .overlay{
+                display: flex;
+                background-color: rgba(0, 0, 0, 0.8);
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                justify-content: center;
+                align-items: center;
+       
+
+
+            }
+
+            .modal{
+                background-color: white;
+                border: solid;
+                width: 300px;
+                padding-left: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-radius: 5px;
+                line-height:25px;
+                border-color: gray;
+
+            }
+            .title{
+                font-weight: bold;
+
+            }
+        </style>
+    </head>
+    <body style="height: 3000px;
+        width: 1000px;
+        background-color: rgba(239, 228, 228, 0.8);">
+        <div style="background-color: green;
+        position:fixed;
+        top: 0;
+        right: 0;
+        height: 1000px;
+        color: white;">right sideba
+        </div>
+        <div class ="overlay">
+            <div class ="modal">
+                <div class="title">Modal Title</div>
+                <div class ="text">This is a modal</div>
+                <button>Close</button>
+            </div>
+        </div>
+    </body>
+
+</html>

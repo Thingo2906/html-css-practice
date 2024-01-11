@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex practice</title>
+        <style>
+
+            .cat-profile{
+                border-style: solid;
+                width: 400px;
+            }
+            .flex-box{
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+                margin-top: 10px;
+                align-items: center;
+                
+            }
+            .picture{
+                width: 100px
+            }
+            .profile-pic{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+            button{
+                background-color: rgb(14, 85, 140);
+                color: white;
+                border-radius: 3px;
+                margin-right: 10px;
+                height: 40px;
+                border: none;
+            }
+            .info{
+                flex: 1;
+                line-height: 14px;
+            }
+            .name{
+                font-weight: bold;
+                color: black
+            }
+            p{
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="cat-profile">
+            <div class="flex-box">
+                <div class ="picture">
+                      <img class ="profile-pic" src="cat-pic/cat-1.jpg">
+                </div>
+                <div class ="info">
+                    <p class ="name">Oliver</p>
+                    <p>The Cat</p>
+                    <p>Popular</p>
+
+                </div>
+                <button>Follow</button>
+            </div>
+
+            <div class="flex-box">
+                <div class ="picture">
+                      <img class ="profile-pic" src="cat-pic/cat-2.jpg">
+                </div>
+                <div class ="info">
+                    <p class ="name">Mimi</p>
+                    <p>Sleepy cat</p>
+                    <p>Popular</p>
+
+                </div>
+                <button>Follow</button>
+            </div>
+
+            <div class="flex-box">
+                <div class ="picture">
+                      <img class ="profile-pic" src="cat-pic/cat-3.jpg">
+                </div>
+                <div class ="info">
+                    <p class ="name">Rex</p>
+                    <p>Happy Cat</p>
+                    <p>Popular</p>
+
+                </div>
+                <button>Follow</button>
+            </div>
+           
+        </div>
+    </body>
+</html>
